@@ -1,0 +1,49 @@
+header{
+    background-color: rgb(18, 214, 18);
+    display: flex;
+    padding: 20px;
+}
+
+div{
+    margin-right: 100px;
+    margin-top: 10px;
+    
+}
+
+img{
+    float: left;
+    padding-left: 50px;
+}
+
+nav{
+    margin-right: 100px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+}
+
+a{
+    
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+label{
+    margin-left: 100px;
+    padding-top: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+    border-style: solid;
+}
+
+a:hover{
+    color: blueviolet;
+}

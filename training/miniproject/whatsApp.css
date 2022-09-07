@@ -1,0 +1,201 @@
+body{
+    font-size: 30px;
+}
+
+.desktop-menu{
+    font-size: 15px;
+    padding-left: 20%;
+}
+
+.feature1{
+    height: 100vh;
+}
+
+.main_content{
+    margin-top: 250px !important;
+    margin-left: 5%;
+}
+
+.progress{
+    height: 5px !important;
+    margin-left: 36% !important;
+}
+
+.heading_name{
+    margin-top: 4%;
+    font-size: 0.9rem !important;
+}
+
+.quote{
+    font-size: 15px !important;
+}
+/* banner */
+.box1 h6{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+.box1 p{
+    margin-left: 30%;
+    font-size: 20px;
+}
+/* #language{
+    
+} */
+
+#mobile_content1 h6, .mobile_content2 h5{
+    font-size: 25px !important;
+}
+
+#mobile_content1 p, .mobile_content2 p,
+ .mobile_content4 p, .mobile_content4 a, 
+ .footer_list{
+    font-size: 18px !important;
+}
+
+.heading p{
+    font-size: 5px !important;
+}
+
+
+#home_heading{
+    height: 30vh;
+}
+
+#home_body{
+    height: 100vh;
+}
+
+#qrcode{
+    margin-top: -4rem;
+    margin-left: 13%;
+}
+
+.fa-qrcode{
+    font-size: 10rem;
+}
+
+
+#fa-qrcode{
+    width: 40%;
+}
+
+@media only screen  and (max-width:576px){
+    /* .desktop{
+        display: none;
+    } */
+    #heading p{
+        font-size: 22px !important;
+    }
+    #heading .logo{
+        width: 30px;
+    }
+    .feature{
+        width:fit-content;
+    }
+    .feature .feat1{
+        width: 50%;
+        /* margin-left: 15%; */
+    }
+    
+    #home_heading {
+        font-size: 20px;
+    }
+    #qrcode{
+        width: 100% !important;
+        margin-left:auto;
+    }
+    #qrcode h6, #qrcode ol{
+        font-size: 15px;
+    }
+    .fa-qrcode{
+        font-size: 6rem;
+    }
+    #fa-qrcode{
+        width: 70%;
+    }
+
+}
+
+@media only screen  and (min-width:576px){
+    #home_heading {
+        font-size: 20px;
+    }
+    #qrcode{
+        width: 80% !important;
+        margin-left: 10%;
+        margin-top: -3rem;
+    }
+    #qrcode h6, #qrcode ol{
+        font-size: 15px;
+    }
+    .fa-qrcode{
+        font-size: 170px;
+    }
+    #fa-qrcode{
+        width: 70%;
+        height: 30vh;
+    }
+    #home_body{
+        height: 70vh;
+    }
+}
+
+@media only screen  and (min-width:768px){
+    .desktop-menu{
+        font-size: 13px;
+        padding-left: 1%;
+    }
+    /* #mobile_content1 .banner_p{
+        font-size: 16px !important;
+    }
+    #feat1{
+        margin-top: 55px;
+    } */
+    #home_heading {
+        font-size: 20px;
+        height: 30vh;
+    }
+    #qrcode{
+        width: 80% !important;
+        margin-left: 10%;
+    }
+    #qrcode h6, #qrcode ol{
+        font-size: 18px;
+    }
+    .fa-qrcode{
+        font-size: 170px;
+    }
+    #fa-qrcode{
+        width: 70%;
+        height: 30vh;
+    }
+    #home_body{
+        height: 70vh;
+    }
+}
+
+@media only screen  and (min-width:992px){
+    .desktop-menu{
+        font-size: 15px;
+        padding-left: 2%;
+    }
+    .fa-qrcode{
+        font-size: 6rem;
+    }
+    #fa-qrcode{
+        width: 45%;
+    }
+}
+
+@media only screen  and (min-width: 1200px){
+    .desktop-menu{
+        font-size: 15px;
+        padding-left: 20%;
+    }
+    .fa-qrcode{
+        font-size: 6rem;
+    }
+    #fa-qrcode{
+        width: 30%;
+    }
+}

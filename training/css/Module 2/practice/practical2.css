@@ -1,0 +1,21 @@
+.fixed{
+    position: fixed;
+    padding: 20px;
+    border: 2px solid blue;
+    width: 330px;
+}
+
+.relative{
+    position: relative;
+    border: 2px solid green;
+}
+
+.static{
+    position: static;
+    border: 2px solid blue;
+}
+
+.absolute{
+    position: absolute;
+    border: 2px solid green;
+}

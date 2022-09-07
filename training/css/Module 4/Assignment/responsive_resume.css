@@ -1,0 +1,321 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+    
+.leftside{
+    width: 22%;
+    height: 97.5vh;
+    border: 2px solid rgb(1, 50, 65);
+    background-color: rgb(1, 50, 65);
+    position: fixed;
+}
+
+#photo{
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+img{
+    border-radius: 150px;
+    border: 6px double aliceblue;
+    width: 80%;
+    height: 25vh;
+}
+
+.aside{
+    font-size: 35px;
+    color: aliceblue;
+    list-style: none;
+    padding: 10px 60px 10px 0;
+    text-align: center;
+}
+
+    .menulink{
+        text-decoration: none;
+        color: aliceblue; 
+    }
+
+    .menulink:hover{
+        font-weight: bolder;
+    }
+
+    /* section */
+    .sec{
+        width: 77%;
+        margin-left: 23%;
+    }
+    .name{
+        background-color:lightgray;
+        text-align: center;
+        padding: 10px 0;
+        color: rgb(2, 104, 134);
+    }
+
+    .detail h3{
+        text-decoration: underline;
+        color: rgb(2, 104, 134);
+        padding-left: 5px;
+        padding-bottom: 50px;
+    }
+
+    #list{
+        list-style: none;
+        padding-top: 20px;
+    }
+
+    #list li{
+        padding: 15px;
+    }
+
+    .li1{
+        color: black;
+        margin-top: 2%;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #list a{
+        text-decoration: none;   
+        text-align: left;
+        color: black;
+    }
+
+    #list a:hover{
+        color:blue
+    }
+
+    #about, #objective, #projects, #skills, #languages, #eduction, #hoobies{
+        padding: 70px 0;
+    }
+
+    .desc{
+        margin-left: 50px;
+    }
+
+    table td{
+        padding: 10px;
+        text-align: center;
+    }
+
+    table, th, td{
+        border: 2px solid black;
+        font-size: 25px;
+    }
+
+    table th{
+        color: rgb(2, 104, 134);
+        text-align: center;
+        padding: 20px;
+    }
+    @media only screen and (max-width:600px){
+        .leftside{
+            height: 20vh;
+            width: 100%;
+            position: fixed;
+        }
+        #photo{
+            margin-top: 0;
+            margin-left: 45%;
+            margin-right: 0;
+            width: 100%;
+        }
+        img{
+            display: none;
+            /* border-radius: 150px;
+            border: 6px double aliceblue;
+            width: 10%;
+            height: 8vh; */
+        }        
+        .menu{
+            width: 100%;
+        }
+
+        .aside{
+            font-size: 10px;
+            display: inline;
+            padding: 0 0 0 0;
+        }
+
+        .sec{
+            width: 77%;
+            margin-left: 0;
+        }
+
+        .name{
+            background-color:rgb(175, 170, 170);
+            text-align: center;
+            font-size: 12px;
+            margin-left: 25%;
+            margin-top: 1%;
+            /* padding-right: 10%; */
+        }
+        
+        .detail{
+            margin-left: 0;
+            font-size: 16px;
+        }
+
+        #about, #objective, #projects, #skills, #languages, #eduction, #hoobies{
+            padding: 50% 0;
+        }
+    
+        video{
+            width: 90%;
+            height: 30vh;
+        }
+        
+        table td{
+            padding: 4px;
+        }
+    
+        table, th, td{
+            font-size: 12px;
+        }
+    
+        table th{
+            padding: 7px;
+        }
+    }
+
+
+
+    @media only screen and (min-width:600px){
+        .leftside{
+            height: 95vh;
+        }
+        .aside{
+            font-size: 15px;
+        }
+        img{
+            height: 13vh;
+        }   
+        .name{
+            background-color:rgb(175, 170, 170);
+            text-align: center;
+            font-size: 15px;
+            margin-left: 8%;
+            /* padding-right: 10%; */
+        }
+        .detail{
+            margin-left: 8%;
+            font-size: 20px;
+        }
+
+        video{
+            width: 90%;
+            height: 30vh;
+        }
+        
+        table td{
+            padding: 4px;
+        }
+    
+        table, th, td{
+            font-size: 13px;
+        }
+    
+        table th{
+            padding: 10px;
+        }
+    }
+    
+    @media only screen and (min-width:768px){
+        .leftside{
+            height: 97.5vh;
+        }
+        .aside{
+            font-size: 20px;
+        }   
+        img{
+            height: 17vh;
+        }   
+        .name{
+            background-color:lightgray;
+            text-align: center;
+            font-size: 20px;
+            margin-left: 5%;
+            /* padding-right: 10%; */
+        }
+        .detail{
+            margin-left: 6.5%;
+        }
+        
+        video{
+            width: 40%;
+            height: 50vh;
+        }
+
+        table td{
+            padding: 4px;
+        }
+    
+        table, th, td{
+            font-size: 15px;
+        }
+    
+        table th{
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (min-width:992px){
+        .leftside{
+            height: 97.5vh;
+            margin-bottom: 2%;
+        }
+        .aside{
+            font-size: 25px;
+        }   
+        img{
+            height: 20vh;
+        }   
+        .name{
+            font-size: 25px;
+            margin-left: 4%;
+        }
+        .detail{
+            margin-left: 5%;
+            font-size: 25px;
+        }
+        
+        video{
+            width: 40%;
+            height: 50vh;
+        }
+
+        table td{
+            padding: 7px;
+        }
+    
+        table, th, td{
+            border: 2px solid black;
+            font-size: 20px;
+        }
+    
+        table th{
+            color: rgb(2, 104, 134);
+            text-align: center;
+            padding: 15px;
+        }
+    }
+
+@media only screen and (min-width:1200px){
+    .leftside{
+        height: 97.5vh;
+    }
+    img{
+        height: 25vh;
+    }   
+    video{
+        width: 50%;
+        height: 70vh;
+    }
+}
+

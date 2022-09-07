@@ -1,0 +1,37 @@
+Name: nensi 
+Message: hey
+
+Name: Dhara 
+Message: hii
+
+Name: nensi 
+Message: tu patan kyare javani che?
+
+Name: dhara 
+Message: saturday
+
+Name: nensi 
+Message: okay
+
+Name: dhara 
+Message: yup
+
+Name: Vidisha 
+Message: hello
+
+Name: nensi 
+Message: hello ma'am
+
+Name: dhara 
+Message: hey
+
+Name: nensi 
+Message: hello
+
+Name: nensi 
+Message: hello
+
+Name: dhara 
+Message: skc
+
+

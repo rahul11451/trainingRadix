@@ -1,0 +1,11 @@
+.div-container{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: aqua;
+}
+
+.div-container > div{
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}

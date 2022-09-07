@@ -1,0 +1,743 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1fr 0.8fr;
+  grid-template-areas: 
+      "header header header header"
+      "banner banner banner banner"
+      "main main main main"
+      "card1 card1 card1 card1"
+      "card2 card2 card2 card2"
+      "footer footer footer footer";
+}
+/* header division start */
+
+header{
+  background-color: rgb(251, 251, 251);
+  grid-area: header;
+}
+
+header .header1{
+  display: flex;
+}
+
+header .header1 .logo{
+  width: 50%;
+  height: 7vh;
+  margin: 20px 300px 10px 200px;
+}
+
+header .header1 .logo img{
+  width: 20%;
+  height: 4vh;
+  margin-right: 300px;
+}
+
+header .header1 .search{
+  width: 50%;
+  height: 7vh;
+  margin: 20px 300px 10px 0;
+  font-size: small;
+}
+
+header .menu ul{
+  list-style: none;
+  background-color: yellow;
+  border-style: dashed;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  padding: 1%;
+}
+
+header .menu ul li{
+   font-size: 50%;
+   padding: 2%;
+   display: inline;
+}
+
+header .menu ul li:hover{
+  background-color: white;
+}
+/* header division end */
+
+/* poster division start */
+
+.poster{
+  grid-area: banner;
+  background-image: url("images/img.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster .inside{
+  margin-left: 20%;
+}
+
+.inside h1{
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 10px rgb(119, 62, 62);
+  padding-bottom: 5%;
+}
+
+.inside p{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.inside button{
+  background-color: yellow;
+  text-align: center;
+  width: 200px;
+  border-radius: 30%;
+  padding: 10px 10px 10px 10px;
+  margin: 20px;
+}
+
+.inside button:hover{
+  background-color:white;
+}
+
+.poster img{
+  float: right;
+  width: 500px;
+  height: 300px;
+}
+/* poster division end */
+
+/* main division start */
+.main{
+  background-color: rgb(255, 255, 255);
+  grid-area: main;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.content img{
+  height: 50px;
+  width: 80px;
+}
+
+.content button{
+  background-color: yellow;
+  float: right;
+  border: none;
+}
+
+.content button:hover{
+  background-color: black;
+  color: white;
+}
+
+.cont1, .cont2{
+  padding: 5px;
+  border: 1px dotted black;
+  margin: 15px;
+  width: 25%;
+}
+
+/* main division End */
+
+/* card1 division start */
+
+.card1 {
+  grid-area: card1;
+  background-image: url(./images/live_system_thank_you_02.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 .items {
+  display: flex;
+  justify-content: center;
+  border: 2px dotted rgb(119, 119, 139);
+  margin: 30px;
+  width: 70%;
+  padding: 10px;
+}
+
+.card1 .items .item{
+  margin: 0 10px;
+  width: 50%;
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 .item img {
+  height: 100px;
+  width: 70%;
+  margin: 25px;
+}
+
+.card1 .items .item .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+}
+
+.item button {
+  background-color: yellow;
+  padding: 5px;
+  margin-left: 15%;
+  font-size: 20px;
+  border: none;
+}
+
+.item button:hover{
+  background-color: black;
+  color: yellow;
+}
+
+/* card1 division end */
+
+/* sale and news division start */
+
+.sale {
+  grid-area: card2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sale .offers {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer1 .bgimg{
+  background-image: url(./images/on_sale_img_23.jpg);
+  opacity: 0.9;
+  width: 400px;
+  height: 34vh;
+}
+
+.offer1 .bgimg h5{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  padding: 60px 0;
+  margin: 10px;
+  border: 1.5px solid yellow;
+}
+
+.offer1 .bgimg h5 span{
+  color: yellow;
+}
+
+.offer1 label, .latest{
+  border-style: dashed;
+  border-width: 0 0 2px 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.news label {
+  grid-area: lab;
+}
+
+.news p {
+  grid-area: detail;
+}
+
+.news img {
+  grid-area: img;
+}
+
+.news span {
+  grid-area: date;
+}
+
+.det {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "lab lab img"
+    " date date img"
+    " detail detail detail";
+  height: 260px;
+  width: 500px;
+  background-color: rgb(202, 193, 193);
+}
+
+.det label{
+  font-size: 20px;
+  margin: 30px 10px 10px 20px;
+
+}
+
+.det img {
+  margin: 30px 20px 10px 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.det span {
+  float: left;
+}
+
+.det p {
+  clear: both;
+  font-size: 15px;
+  padding: 10px;
+}
+   
+.sale .features {
+  display: flex;
+}
+
+.features {
+  display: flex;
+}
+
+.feat1 {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 15px;
+}
+
+.feat1 label {
+  color:blueviolet;
+  border-width: 0 0 2px 0;
+  border-style: dotted;
+}
+
+/* sale and news divsion end */
+
+/* footer division start */
+
+footer{
+  grid-area: footer;
+}
+
+.foot1 {
+  background-image: url(./images/footer_bg.jpg);
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+
+.foot1 li{
+  list-style: none;
+  color: white;
+  font-size: 25px;
+}
+
+.foot1 .title {
+  color: yellow;
+}
+  
+.forms form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(211, 204, 204);
+  padding:40px;
+}
+
+.forms form p{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.forms form input{
+  font-size: 10px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.forms form button{
+  background-color: black;
+  color: yellow;
+  margin-left: 100px;
+}
+
+.forms form button:hover{
+  background-color: yellow;
+  color: black;
+}
+
+.foot1 .logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.logo .logo1 img {
+  height: 80px;
+  width: 200px;
+}
+
+.foot2 {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-around;
+  padding: 2px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    overflow-x: hidden;
+  }
+  header .header1 .logo{
+    margin: 20px 80px 10px 140px;
+  }
+  header .menu ul {
+    font-size: 60%;
+    text-align: center;
+  }
+  header .menu ul li{
+    padding-right: 0;
+  }
+  header .header1 .search{
+    visibility: hidden;
+  }
+  .poster{
+    background-image: url("images/live_system_thank_you_02.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .poster .inside{
+    margin-left: 5%;
+  }
+  .poster img{
+    float: right;
+    width: 400px;
+    height: 100px;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cont1, .cont2{
+    padding: 5px;
+    border: 1px dotted black;
+    margin: 15px;
+    width: 70%;
+  }
+  .card1 .items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    width: 60%;
+    flex-direction: column;
+  }
+  .card1 .items .item{
+    width: 80%;
+  }
+  .card1 .item img {
+    height: 50px;
+    width: 40%;
+  }
+  .sale .offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .offer1 .bgimg{
+    background-image: url(./images/on_sale_img_23.jpg);
+    opacity: 0.9;
+    width: 100%;
+    height: 38vh;
+  }
+  .det {
+    height: 260px;
+    width: 300px;
+  }
+  .det label{
+    font-size: 15px;
+    margin: 30px 10px 10px 20px;
+  }
+  .det p {
+    clear: both;
+    font-size: 10px;
+  }
+  .features {
+    margin: 40px;
+  }
+  .feat1 {
+    padding: 0;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .foot1 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+  }
+  .foot1 li{
+    font-size: 20px;
+  }
+  .foot2 {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 600px) {
+  .container{
+    overflow-x: hidden;
+  }
+  header .header1 .logo{
+    margin: 20px 80px 10px 230px;
+  }
+  header .menu ul {
+    font-size: 80%;
+    text-align: center;
+  }
+  header .menu ul li{
+    padding-right: 0;
+  }
+  header .header1 .search{
+    visibility: hidden;
+  }
+  .poster{
+    background-image: url("images/live_system_thank_you_02.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .poster .inside{
+    margin-left: 5%;
+  }
+  .poster img{
+    float: right;
+    width: 400px;
+    height: 100px;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cont1, .cont2{
+    padding: 5px;
+    border: 1px dotted black;
+    margin: 15px;
+    width: 70%;
+  }
+  .card1 .items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    width: 60%;
+    flex-direction: column;
+  }
+  .card1 .items .item{
+    width: 80%;
+  }
+  .card1 .item img {
+    height: 50px;
+    width: 40%;
+  }
+  .sale .offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .offer1 .bgimg{
+    background-image: url(./images/on_sale_img_23.jpg);
+    opacity: 0.9;
+    width: 100%;
+    height: 38vh;
+  }
+  .det {
+    height: 260px;
+    width: 300px;
+  }
+  .det label{
+    font-size: 15px;
+    margin: 30px 10px 10px 20px;
+  }
+  .det p {
+    clear: both;
+    font-size: 10px;
+  }
+  .features {
+    margin: 40px;
+  }
+  .feat1 {
+    padding: 0;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .foot1 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+  }
+  .foot1 li{
+    font-size: 20px;
+  }
+  .foot2 {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .container{
+    overflow-x: hidden;
+  }
+  header .header1 .logo{
+    width: 50%;
+    height: 7vh;
+    margin: 20px 0px 10px 200px;
+  }
+  header .menu ul {
+    font-size: 80%;
+    text-align: center;
+  }
+  header .menu ul li{
+    font-size: 90%;
+    padding: 2%;
+    display: inline;
+  }
+  header .header1 .search{
+    visibility:visible;
+    width: 40%;
+    height: 7vh;
+    margin: 20px 0px 10px 0;
+    font-size: small;
+  }
+  .poster{
+    background-image: url("images/live_system_thank_you_02.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .poster .inside{
+    margin-left: 5%;
+  }
+  .poster img{
+    visibility: visible;
+    float: right;
+    width: 400px;
+    height: 200px;
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .cont1, .cont2{
+    padding: 5px;
+    border: 1px dotted black;
+    margin: 15px;
+    width: 25%;
+  }
+  .card1 .items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px dotted rgb(119, 119, 139);
+    margin: 30px;
+    width: 70%;
+    padding: 10px;
+  }
+  .card1 .items .item{
+    margin: 0 10px;
+    width: 50%;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .card1 .item img {
+    height: 100px;
+    width: 70%;
+    margin: 25px;
+  }
+  .sale .offers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .offer1 .bgimg{
+    opacity: 0.9;
+    width: 400px;
+    height: 34vh;
+  }
+  .det {
+    height: 260px;
+    width: 500px;
+  }
+  .det label{
+    font-size: 20px;
+    margin: 30px 10px 10px 20px;
+  }
+  .det p {
+    clear: both;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .features {
+    display: flex;
+  }
+  .feat1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 15px;
+  }
+  .foot1 {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 100%;
+  }
+  .foot1 li{
+    font-size: 20px;
+  }
+  .foot2 {
+    width: 100%;
+  }
+}

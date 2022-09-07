@@ -1,0 +1,27 @@
+.visible{
+    width: 100px;
+    height: 50vh;
+    border: 1px solid black;
+    overflow: visible;
+}
+
+.hidden{
+    width: 100px;
+    height: 50vh;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.scroll{
+    width: 100px;
+    height: 50vh;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.auto{
+    width: 100px;
+    height: 50vh;
+    border: 1px solid black;
+    overflow: auto;
+}

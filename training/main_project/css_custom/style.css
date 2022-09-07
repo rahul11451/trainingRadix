@@ -1,0 +1,61 @@
+body{
+    background-image: url('../main_images/photos/frontend2.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    /* background-repeat:no-repeat;  */
+    /* background-position: center; */
+}
+.hotelTitle {
+    min-height: 700px;
+}
+.main {
+    margin-top: 140px;
+    padding-bottom: 500px !important;
+}
+
+.switch{
+    background-color: black;
+    border-color: chartreuse;
+}
+
+footer{
+    margin-top: 7% !important;
+}
+
+nav{
+    font-size: 23px;
+}
+.main #data h6{
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    font-weight: bolder;
+}
+
+.margin_nen {
+    text-shadow: 15px 10px 15px blueviolet;
+}
+
+.active {
+    text-decoration: underline !important;
+    font-weight: bolder !important;
+    color: rgb(141, 63, 63) !important;
+}
+/* #sidebar a.active {
+    text-decoration: underline !important;
+    font-weight: bolder !important;
+    color: rgb(158, 96, 96) !important;
+} */
+
+
+
+@media (max-width: 576px) {
+    .main .d-sm-flex {
+        display: flex;
+    }
+    .logo_img{
+        display: none;
+    }
+}

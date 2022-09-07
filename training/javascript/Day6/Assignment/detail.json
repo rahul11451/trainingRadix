@@ -1,0 +1,40 @@
+{ 
+    "products":[
+        {
+            "Id":1,
+            "Name":"cheese",
+            "Price": 2.50,
+            "Location":"Refrigerated foods"
+        },
+        {
+            "Id":2,
+            "Name":"Crisps",
+            "Price": 3,
+            "Location":"the Snack isle"
+        },
+        {
+            "Id":3,
+            "Name":"Pizza",
+            "Price": 4,
+            "Location":"Refrigerated foods"
+        },
+        {
+            "Id":4,
+            "Name":"Chocolate",
+            "Price": 1.50,
+            "Location":"the Snack isle"
+        },
+        {
+            "Id":5,
+            "Name":"Self-raising flour",
+            "Price": 1.50,
+            "Location":"Home baking"
+        },
+        {
+            "Id":6,
+            "Name":"Ground almonds",
+            "Price": 3,
+            "Location":"Home baking"
+        }
+    ]
+}

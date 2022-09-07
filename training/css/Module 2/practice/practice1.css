@@ -1,0 +1,11 @@
+#div{
+    margin: 50px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.div{
+    border: 1px solid black;
+    padding: 20px;
+}

@@ -1,0 +1,46 @@
+header{
+    background-color: red;
+    width: 97.5%;
+    padding: 20px;
+}
+
+.img{
+    float: left;
+    padding-left: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: bisque;
+}
+
+main{
+    width: 97.5%;
+}
+
+.leftbar{
+    float: left;
+    background-color: yellow;
+    width: 20%;
+    height: 66vh;
+    text-align: center;
+}
+
+.sidebar{
+    background-color: coral;
+    width: 102.55%;
+    height: 65vh;
+    text-align: center;
+}
+
+footer{
+    background-color: lightcoral;
+    padding: 40px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+.content{
+    border: 2px solid blue;
+}
+
+@media only screen and (max-width: 500px){
+    .content{
+        border-color: red;
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ckeditor/ckeditor5-ckfinder": "^35.0.1"
+  }
+}
