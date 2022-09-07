@@ -11,7 +11,6 @@ include '../layout/header.php';
             <div class="container">
                 <div class="row mb-3">
                     <div class="col-lg-12 lg:ps-5 pt-3 column10">
-
                         <!-- Success Message -->
                          <?php echo $result; 
                         ?>
@@ -28,8 +27,6 @@ include '../layout/header.php';
                                             } ?>" class="btn btn-outline-danger px-3"><i class="fa fa-arrow-left me-3"></i>BACK</a>
                             </div>
                         </div>
-
-
                         <!-- Data Add Part - Form -->
                         <div class="p-5 bg-white shadow-lg bg-opacity-75 rounded fw-bolder border border-2 border-danger adminServiceForm wow fadeInUp" data-wow-delay="0.1s">
                             <h3 class="text-center text-decoration-underline mb-5 text-danger">Services</h3>
@@ -37,23 +34,17 @@ include '../layout/header.php';
                                 <div class="row mb-5">
                                     <div class=" form-group">
                                         <label for="titl" class='h4'>Service Name <span class="text-danger">*</span></label>
-                                        <input type="text" name="name" id="" placeholder="Service Name" class="form-control border border-dark border-1" value="<?php if (isset($id)) {
-    echo $editAr[0]['sServiceName'];
-} else { echo $nameVal; } ?>">
+                                        <input type="text" name="name" id="" placeholder="Service Name" class="form-control border border-dark border-1" value="<?php if (isset($id)) {echo $editAr[0]['sServiceName'];} else { echo $nameVal; } ?>">
                                         <span class="text-danger"><?php echo $erName; ?></span>
                                     </div>
-
                                 </div>
 
                                 <div class="row mb-5">
                                     <div class="col form-group">
                                         <label for="titl" class='h4'>Description <span class="text-danger">*</span></label>
-                                        <textarea name="desc" placeholder="Description" id="" class="form-control border border-dark border-1" cols="30" rows="5"><?php if (isset($id)) {
-    echo $editAr[0]['sDescription'];
-} else { echo $descVal; } ?></textarea>
+                                        <textarea name="desc" placeholder="Description" id="" class="form-control border border-dark border-1" cols="30" rows="5"><?php if (isset($id)) { echo $editAr[0]['sDescription']; } else { echo $descVal; } ?></textarea>
                                         <span class="text-danger"><?php echo $erDesc; ?></span>
                                     </div>
-
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4 mt-5 pt-3">
@@ -67,11 +58,9 @@ include '../layout/header.php';
                                     <?php
                                     }
                                     ?>
-
                                     <div class="form-group mb-3">
                                         <input type="submit" value="Save And Back" class="btn btn-danger mb-4 fw-bolder w-100 " name="save&back">
                                     </div>
-
                                 </div>
                             </form>
                         </div>

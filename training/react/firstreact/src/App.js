@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './Footer';
+import Name from './Name';
 import pic from './whatsApp/WhatsApp.svg.png';
 import feature1 from './whatsApp/feature1.jpg';
 
@@ -197,6 +198,7 @@ function App() {
                 </div>
             </div>
             <Footer />
+            <Name name="nensi" surname="darji" middlename="sanjaykumar" />
         </div>
         // desktop menu end
     );
