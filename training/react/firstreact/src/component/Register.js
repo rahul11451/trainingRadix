@@ -1,16 +1,24 @@
 import $ from 'jquery';
 
-$(document).ready(function () {
-    $('.togglePassword').click(function (e) {
-        var type = $(this).parent().prev().attr('type');
-        if (type == 'password') {
-            $(this).parent().prev().attr('type', 'text');
-        } else {
-            $(this).parent().prev().attr('type', 'password');
-        }
-    });
-});
+// $(document).ready(function () {
+//     $('.togglePassword').click(function (e) {
+//         var type = $(this).parent().prev().attr('type');
+//         if (type == 'password') {
+//             $(this).parent().prev().attr('type', 'text');
+//         } else {
+//             $(this).parent().prev().attr('type', 'password');
+//         }
+//     });
+// });
 
+// document.getElementsByClassName('togglePassword').onclick = typeChange;
+
+function typeChange(e) {
+    var types = document.getElementsByClassName('togglePassword');
+    // var ids = types.getAtrribute('id');
+    // alert(ids);
+    alert(types);
+}
 
 
 const Register = () =>
@@ -61,10 +69,10 @@ const Register = () =>
                                         </div>
                                         <div className="form-outline mb-4">
                                             <label className="form-label" htmlFor="form2Example27">Password <span className="text-danger">*</span></label>
-                                            <div class="input-group">
+                                            <div className="input-group">
                                                 <input type="password" id="regiPass" className="form-control border  border-dark border-end-0 rounded-0" />
                                                 <div class="input-group-append">
-                                                    <span className="input-group-text border border-start-0 border-dark rounded-0 togglePassword bg-white" id="basic-addon2"><span className="fa fa-eye py-2"></span></span>
+                                                    <span className="input-group-text border border-start-0 border-dark rounded-0 togglePassword bg-white" id="basic-addon2" onClick={typeChange}><span className="fa fa-eye py-2"></span></span>
                                                 </div>
                                             </div>
                                             <span className="text-danger erRegiPass"></span>
@@ -74,7 +82,7 @@ const Register = () =>
                                             <div className="input-group">
                                                 <input type="password" id="regiRePass" name="repassword" className="form-control border  border-dark border-end-0 rounded-0" />
                                                 <div className="input-group-append">
-                                                    <span className="text-center input-group-text bg-white border border-start-0 border-dark rounded-0 togglePassword"> <span className="fa fa-eye py-2"></span></span>
+                                                    <span className="text-center input-group-text bg-white border border-start-0 border-dark rounded-0 togglePassword" onClick={typeChange}> <span className="fa fa-eye py-2"></span></span>
                                                 </div>
                                             </div>
                                             <span className="text-danger erRegiRePass"></span>

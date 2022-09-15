@@ -6,11 +6,25 @@ import reportWebVitals from './reportWebVitals';
 import StudentIdCard from './component/StudentIdCard';
 import Register from './component/Register';
 
+function People() {
+  return (
+    <div>
+      <Person />
+    </div>
+  );
+}
+
+const Person = () => {
+  return (
+    <div><p>Hello world</p></div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Register />
+    <People />
+    {/* <Register /> */}
     {/* <App /> */}
     {/* <StudentIdCard/> */}
   </React.StrictMode>
